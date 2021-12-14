@@ -21,6 +21,9 @@ resource "aws_instance" "web_server_instance" {
   tags = {
     Name = "bc_workshop_ec2"
   }
+  *_block_device {
+    encrypted = true
+  }
 }
 
 data "aws_ami" "ubuntu" {
