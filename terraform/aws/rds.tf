@@ -12,6 +12,9 @@ resource "aws_rds_cluster" "app1-rds-cluster" {
     git_repo             = "terragoat"
     yor_trace            = "6771b857-be43-431e-978c-00375bd7bde6"
   }
+  deletion_protection = true
+  iam_database_authentication_enabled = true
+  storage_encrypted = true
 }
 
 resource "aws_rds_cluster" "app2-rds-cluster" {
@@ -28,6 +31,9 @@ resource "aws_rds_cluster" "app2-rds-cluster" {
     git_repo             = "terragoat"
     yor_trace            = "04dea997-78bf-4ebe-908a-a6ab3913fbd4"
   }
+  deletion_protection = true
+  iam_database_authentication_enabled = true
+  storage_encrypted = true
 }
 
 resource "aws_rds_cluster" "app3-rds-cluster" {
@@ -44,6 +50,9 @@ resource "aws_rds_cluster" "app3-rds-cluster" {
     git_repo             = "terragoat"
     yor_trace            = "af7d4e5a-492b-46d7-871a-081b1e41fcaf"
   }
+  deletion_protection = true
+  iam_database_authentication_enabled = true
+  storage_encrypted = true
 }
 
 resource "aws_rds_cluster" "app4-rds-cluster" {
@@ -60,6 +69,9 @@ resource "aws_rds_cluster" "app4-rds-cluster" {
     git_repo             = "terragoat"
     yor_trace            = "3debddbc-aa25-415d-b29c-6e7294f82fe9"
   }
+  deletion_protection = true
+  iam_database_authentication_enabled = true
+  storage_encrypted = true
 }
 
 resource "aws_rds_cluster" "app5-rds-cluster" {
@@ -76,6 +88,9 @@ resource "aws_rds_cluster" "app5-rds-cluster" {
     git_repo             = "terragoat"
     yor_trace            = "453eef39-4a30-42a4-91ff-94fa5a1eca8a"
   }
+  deletion_protection = true
+  iam_database_authentication_enabled = true
+  storage_encrypted = true
 }
 
 resource "aws_rds_cluster" "app6-rds-cluster" {
@@ -92,6 +107,9 @@ resource "aws_rds_cluster" "app6-rds-cluster" {
     git_repo             = "terragoat"
     yor_trace            = "b247c704-cd12-4c89-93ca-d515bf99a05b"
   }
+  deletion_protection = true
+  iam_database_authentication_enabled = true
+  storage_encrypted = true
 }
 
 resource "aws_rds_cluster" "app7-rds-cluster" {
@@ -108,6 +126,9 @@ resource "aws_rds_cluster" "app7-rds-cluster" {
     git_repo             = "terragoat"
     yor_trace            = "242295af-665b-48cf-8a02-8b20dfeac4fa"
   }
+  deletion_protection = true
+  iam_database_authentication_enabled = true
+  storage_encrypted = true
 }
 
 resource "aws_rds_cluster" "app8-rds-cluster" {
@@ -124,6 +145,9 @@ resource "aws_rds_cluster" "app8-rds-cluster" {
     git_repo             = "terragoat"
     yor_trace            = "5a68fecc-3d3b-4739-90bd-cbe668cfb611"
   }
+  deletion_protection = true
+  iam_database_authentication_enabled = true
+  storage_encrypted = true
 }
 
 resource "aws_rds_cluster" "app9-rds-cluster" {
@@ -140,4 +164,7 @@ resource "aws_rds_cluster" "app9-rds-cluster" {
     git_repo             = "terragoat"
     yor_trace            = "f30be7f4-734a-45bd-877a-212afb39f13c"
   }
+  deletion_protection = true
+  iam_database_authentication_enabled = true
+  storage_encrypted = true
 }
